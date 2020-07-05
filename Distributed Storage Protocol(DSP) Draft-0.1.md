@@ -1,4 +1,4 @@
-# Distributed Storage Protocol Version 1(DSP-1) Draft
+# Distributed Storage Protocol (DSP) Draft-0.1
 > This document is a proposal of DSP which initialed by DSP Labs and it is still draft.We hope it would represent the consensus of the DSP community and would updated continously by the proposals of public. 
 
 ## Introduction
@@ -630,7 +630,7 @@ The schema could setup freely, but if endpoint want to connect to others, the sc
 #### Payload Format
 
 |Network ID(4) | CompressINFO(2) |Message Length(4)| Message(...)|
-|---|---|---|---|---
+|---|---|---|---|---|
 |ID | Compress Information | raw data length | raw data|
 
 #### Message Compression
@@ -652,7 +652,7 @@ P2P layer could compress the raw package when it exceed the config size which se
 |FLAT  | 5 |
 
 **All code encoded as 16bits length**
-   
+
 ### Opcode
 For each message,must registe an opcode for special message to build a opcode-message pairing.Default opcode for special message as follow:
 
